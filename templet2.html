@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin: 0;
+            /* padding: 5px; */
+            padding-top: 0;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            width: 100%;
+
+        }
+
+        li a {
+            text-decoration: none;
+            display: block;
+            padding: 15px 15px;
+            color: rgb(14, 14, 14);
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            letter-spacing: 4px;
+        }
+
+        .navbar {
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+        .navbar a {
+            display: block;
+            position: relative;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .h3 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: lighter;
+            padding: 8px;
+            border-bottom: groove;
+            border-color: rgba(211, 211, 211, 0.1);
+
+        }
+
+        .container {
+            position: relative;
+            /* height: 500px;    */
+        }
+
+        .topleft {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 30px;
+            color: rgb(231, 190, 54);
+            /* display: ;
+            padding: ; */
+            font-family: italic;
+        }
+
+        .center {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 35px;
+            color: white;
+            letter-spacing: 4px;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0 4px;
+        }
+
+        .column {
+            flex: 25%;
+            max-width: 25%;
+            padding: 0 4px;
+        }
+
+        .column img {
+            margin-top: 8px;
+            vertical-align: middle;
+        }
+
+        @media (max-width: 800px) {
+            .column {
+                flex: 50%;
+                max-width: 50%;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .column {
+                flex: 100%;
+                max-width: 100%;
+            }
+        }
+
+        @media(max-width:600px) {
+            .a {
+                display: none;
+            }
+        }
+
+        @media(max-width:400px) {
+            .ar {
+                display: none;
+            }
+        }
+
+        .button {
+            width: 100%;
+            padding: 10px;
+            background-color: text-grey(240, 14, 14);
+            color: black;
+            display: block;
+            margin-top: 30px;
+        }
+
+        .cont {
+            width: 100%;
+            padding: 1%;
+            border-color: lightgray;
+            border-style: groove;
+            margin: 1%;
+        }
+
+        .button:hover {
+            background-color: rgb(226, 226, 232);
+        }
+
+        .li a:hover {
+            background-color: rgb(12, 211, 98);
+        }
+
+        .co {
+            margin: 1%;
+        }
+
+        /*style="background-color: black; color: white; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; padding: 8px 8px; margin: 1%;" >SEND MESSAGE</button>*/
+        .butt {
+            background-color: black;
+            color: white;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            padding: 8px 8px;
+            margin: 1%;
+
+        }
+
+        .butt:hover {
+            background-color: gray;
+        }
+
+        /*.butt a:hover{
+            background-color: red;
+        }*/
+
+        .a li a:hover {
+            background-color: lightgray;
+            color: black;
+        }
+
+        .column .container img {
+            height: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <ul style="position:fixed;  background-color: white; overflow: hidden; z-index: 1; margin-top: 0%; ">
+        <li><a href="#home" style="float: left;"><b>BR</b> Architects</a></li>
+        <div class="a">
+            <li style="float: right; width: 120px;"><a href="#contact">Contact</a></li>
+            <li style="float: right; width: 120px;"><a href="#about">About</a></li>
+            <li style="float: right; width: 120px;"><a href="#packages">Packages</a></li>
+            <li style="float: right; width: 120px;"><a href="#Home">Home</a></li>
+        </div>
+
+        </div>
+    </ul>
+    <div class="container">
+        <div id="Home"></div>
+        <img src="Thome.jpg" alt="BR Architects" style="width: 100%; height: 90%;">
+        <div class="center" style="text-align: center; font-family: ;"> Travel is Investment in yourself</span></div>
+    </div>
+    <div id="packages"></div>
+    <br><br>
+
+
+
+    <h3 class="h3">Packages</h3>
+    <div class="row">
+
+        <div class="column">
+
+            <div class="container">
+                <img src="Kashmir.jpg" style="width: 100%;">
+                <div class="topleft">Kashmir</div>
+            </div>
+
+            <div class="container">
+                <img src="Rajasthan.jpg" style="width: 100%;">
+                <div class="topleft">Rajasthan</div>
+            </div>
+
+        </div>
+
+        <div class="column">
+
+            <div class="container">
+                <img src="kerala.jpg" style="width: 100%;">
+                <div class="topleft">Kerala</div>
+            </div>
+
+            <div class="container">
+                <img src="Gujarat.jpg" style="width: 100%;">
+                <div class="topleft">Gujarat</div>
+            </div>
+
+        </div>
+
+        <div class="column">
+
+            <div class="container">
+                <img src="HimachalPradesh.jpg" style="width: 100%;">
+                <div class="topleft">Himachal Pradesh</div>
+            </div>
+
+            <div class="container">
+                <img src="westbangal.jpg" style="width: 100%;">
+                <div class="topleft">West Bangal</div>
+            </div>
+
+        </div>
+
+        <div class="column">
+            <div class="container">
+                <img src="Punjab.jpg" style="width: 100%;">
+                <div class="topleft">Punjab</div>
+            </div>
+            <div class="container">
+                <img src="ArunachalPradesh.jpg" style="width: 100%;">
+                <div class="topleft">Arunachal Pradesh</div>
+            </div>
+
+        </div>
+    </div>
+    <div id="about"></div>
+    <br><br><br>
+
+    <h3 class="h3">About</h3>
+    <p style="margin: 1%;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+        aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+        deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat.</p>
+
+    <div class="row">
+        <div class="column">
+            <img src="john.png" alt="" style="width: 100%;">
+            <h3>John Doe</h3>
+            <p style="opacity: 0.5;">CEO & Founder</p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+            commodi distinctio tenetur minus corrupti dolorem.
+            <button class="button" type="submit">Contact</button>
+        </div>
+
+        <div class="column">
+            <img src="jane.png" alt="" style="width: 100%;">
+            <h3>jane Doe</h3>
+            <p style="opacity: 0.5;">Architect</p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+            commodi distinctio tenetur minus corrupti dolorem.
+            <button class="button" type="submit">Contact</button>
+        </div>
+
+        <div class="column">
+            <img src="mike.png" alt="" style="width: 100%;">
+            <h3>Mike Ross</h3>
+            <p style="opacity: 0.5;">Architect</p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+            commodi distinctio tenetur minus corrupti dolorem.
+            <button class="button" type="submit">Contact</button>
+        </div>
+
+        <div class="column">
+            <img src="dan.png" alt="" style="width: 100%">
+            <h3>Dan Star</h3>
+            <p style="opacity: 0.5;">Architect</p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+            commodi distinctio tenetur minus corrupti dolorem.
+            <button class="button" type="submit">Contact</button>
+        </div>
+    </div>
+    <div id="contact"></div>
+    <br><br><br>
+
+
+    <div class="co">
+        <h3 class="h3">Contact</h3>
+
+        <p style="margin: 1%;">Lets get in touch and talk about your next Tour.</p>
+
+
+        <input type="text" class="cont" placeholder="Name"><br><br>
+        <input type="text" class="cont" placeholder="Email"><br><br>
+        <input type="text" class="cont" placeholder="Subject"><br><br>
+        <input type="text" class="cont" placeholder="Comment"><br><br>
+        <button type="submit" class="butt">SEND MESSAGE</button>
+
+        <br><br>
+
+        <img src="common.png" alt="map" width="100%">
+
+        <br><br>
+
+        <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank"
+                class="w3-hover-text-green">w3.css</a></p>
+</body>
+
+</html>
